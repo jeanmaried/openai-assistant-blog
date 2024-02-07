@@ -8,10 +8,6 @@ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 MODEL = "gpt-4-turbo-preview"
 
 
-class PollingTimeoutException(Exception):
-    pass
-
-
 class Agent:
     def __init__(self, name: str, personality: str):
         self.name = name
